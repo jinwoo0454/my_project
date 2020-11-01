@@ -1,0 +1,77 @@
+a {
+    text-decoration: none;
+}
+
+:root {
+    --nav-height: 81px;
+    --main-bg-color: brown;
+    --sidebar-on-width: 20%;
+    --sidebar-off-width: 0%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.side {
+    background-color: sandybrown;
+    width: 20%;
+}
+
+.main {
+    width: 80%;
+    background-color: white;
+}
+.nav-content {
+    color:black;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 20%;
+    text-align: center;
+    font-size: 17px;
+}
+
+#mosol-home {
+    width: 20%;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color: red;
+    font-size: 35px;
+}
+
+#textbook_solution{
+    color:black;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - var(--nav-height));
+}
+
+button{
+    all:unset;
+    background-color: steelblue;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
